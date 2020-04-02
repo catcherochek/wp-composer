@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap');
+$boxShadow: 0px -6px 10px darkgrey, 0px 4px 15px rgba(0, 0, 0, 0.15);
+$mainColor: #517fb3;
+$secondaryColor: #999;
+$bgColor: #f2f2f2;
+$border :#003b8b;
+
+.mediacard-wrapper{
+  display:flex;
+  /*flex-wrap:wrap;*/
+  justify-content:space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px;
+
+
+  border:0px;
+  .cont{
+    border-color: 1px solid $border ;
+    margin: 50px;
+  }
+  .service-box{
+    justify-content:space-between;
+    box-shadow: $boxShadow;
+    padding: 3rem 3rem;
+    border-radius:.5rem;
+    .service-box-icon{
+      display:block;
+      text-align:center;
+      margin-bottom:1.5rem;
+      img{
+        margin: 0px auto;
+        width: 30px;
+        height: 30px;
+      }
+      i{
+        color:$mainColor;
+        font-size:3rem;
+      }
+    }
+    .service-box-title{
+      display:block;
+      text-align:center;
+      font-weight:700;
+      text-transform:uppercase;
+      color:$mainColor;
+      font-size: 1.5rem;
+    }
+    .service-box-content{
+      margin:1.5rem 0;
+      text-align:center;
+      color:$secondaryColor;
+      line-height:1.5rem;
+      font-size:1.1rem;
+    }
+    .service-box-button{
+      display:block;
+      text-align:center;
+      a{
+        display:inline-block;
+        text-transform:uppercase;
+        font-weight:500;
+        box-shadow:$boxShadow;
+        text-decoration:none;
+        color:$mainColor;
+        padding:1rem;
+        border-radius:.5rem;
+        transition: box-shadow .3s ease;
+        &:hover{
+          box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+
+
+}
+
+
