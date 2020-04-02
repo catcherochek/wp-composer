@@ -1,0 +1,11 @@
+{
+  "name": "monwesta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "css": "sass src/scss:assets/css src/style.scss:style.css --watch "
+  },
+  "author": "",
+  "license": "ISC"
+}
